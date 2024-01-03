@@ -13,8 +13,6 @@ public class ExtraEnd {
     }
 
     static String extraEnd(String str) {
-
-
         if (str.length() >= 2) {
             String copyStr = str.substring(str.length() - 2);
            return copyStr + copyStr + copyStr;
