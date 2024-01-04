@@ -13,12 +13,12 @@ public class MakeEnds {
         int[] arr2 = {1, 2, 3, 4};
         int[] arr3 = {7, 4, 6, 2};
 
-        System.out.println(Arrays.toString(Reverse3(arr1)));
-        System.out.println(Arrays.toString(Reverse3(arr2)));
-        System.out.println(Arrays.toString(Reverse3(arr3)));
+        System.out.println(Arrays.toString(reverse3(arr1)));
+        System.out.println(Arrays.toString(reverse3(arr2)));
+        System.out.println(Arrays.toString(reverse3(arr3)));
     }
 
-    static int[] Reverse3(int[] nums) {
+    static int[] reverse3(int[] nums) {
                 return nums.length == 1
                 ?
                 new int[] {nums[0], nums[0]}
