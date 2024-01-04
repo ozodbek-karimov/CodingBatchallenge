@@ -13,18 +13,19 @@ public class Fix23 {
         int[] arr2 = {2, 3, 5};
         int[] arr3 = {1, 2, 1};
 
-        System.out.println(Arrays.toString(firstLast6(arr1)));
-        System.out.println(Arrays.toString(firstLast6(arr2)));
-        System.out.println(Arrays.toString(firstLast6(arr3)));
+        System.out.println(Arrays.toString(fix23(arr1)));
+        System.out.println(Arrays.toString(fix23(arr2)));
+        System.out.println(Arrays.toString(fix23(arr3)));
     }
 
-    static int[] firstLast6(int[] nums) {
-        for (int i = 0; i < nums.length - 1; i++) {
-            if (nums[i] == 2 && nums[i + 1] == 3) {
-                nums[i + 1] = 0;
-            }
+    static int[] fix23(int[] nums) {
+        if (nums[0] == 2 && nums[1] == 3) {
+            return new int[]{nums[0], nums[1] = 0, nums[2]};
+        } else if (nums[1] == 2 && nums[2] == 3) {
+            return new int[]{nums[0], nums[1], nums[2] = 0};
         }
         return nums;
     }
+
 
 }
