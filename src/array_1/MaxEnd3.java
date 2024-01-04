@@ -19,13 +19,9 @@ public class MaxEnd3 {
     }
 
     static int[] maxEnd3(int[] nums) {
-        for (int i = 0; i < nums.length; i++) {
-            nums[i] = Math.max(nums[0], nums[2]);
-        }
-
-        /**
-             Arrays.fill(nums, Math.max(nums[0], nums[2]));
-         */
+        nums[0] = Math.max(nums[0], nums[2]);
+        nums[1] = nums[0];
+        nums[2] = nums[0];
         return nums;
     }
 
