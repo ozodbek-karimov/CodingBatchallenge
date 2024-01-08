@@ -14,18 +14,18 @@ public class CatDog {
     }
 
     static boolean catDog(String str) {
-        int countCat = 0;
-        int countDog = 0;
+            int countCat = 0;
+            int countDog = 0;
 
-        for (int i = 0; i < str.length(); i++) {
-            if (str.startsWith("cat", i)){
-                countCat++;
-            } else if (str.startsWith("dog", i)) {
-                countDog++;
+            for (int i = 0; i < str.length(); i++) {
+                if (str.startsWith("cat", i)){
+                    countCat++;
+                } else if (str.startsWith("dog", i)) {
+                    countDog++;
+                }
             }
-        }
 
-        return countDog == countCat;
+            return countDog == countCat;
     }
 
 }
